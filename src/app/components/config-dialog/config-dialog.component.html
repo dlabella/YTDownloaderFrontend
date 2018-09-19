@@ -1,0 +1,17 @@
+<h2 mat-dialog-title>{{Description}}</h2>
+
+<mat-dialog-content>
+  
+    <mat-form-field>
+        <input matInput placeholder="Download Files Path">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Download Audio Path">
+    </mat-form-field>
+
+</mat-dialog-content>
+
+<mat-dialog-actions>
+    <button class="mat-raised-button" (click)="cancel()">Cancel</button>
+    <button class="mat-raised-button mat-primary" (click)="save()">Save</button>
+</mat-dialog-actions>

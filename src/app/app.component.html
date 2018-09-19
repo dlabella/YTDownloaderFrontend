@@ -1,0 +1,45 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="app-main-layout">
+  <div class="app-toolbar">
+      <app-navbar (settings)="onNavBarEvent($event)"></app-navbar>
+  </div>
+  <div class="app-download-form">
+    <mat-form-field class="big-width">
+      <input #url matInput placeholder="Download Link">
+    </mat-form-field>
+    <div class="app-download-options">
+      <button mat-button (click)="onFileDownloadClick($event,url.value)"><mat-icon>cloud_download</mat-icon></button>
+      <button mat-button (click)="onAudioDownloadClick($event,url.value)"><mat-icon >library_music</mat-icon></button>
+    </div>
+  </div>
+  <div class="app-downloads-tab">
+      <mat-tab-group>
+          <mat-tab label="Downloading">
+            <div class="app-active-downloads">
+               <ng-template mat-tab-label>
+                <mat-icon class="icon-text-right">get_app</mat-icon>
+                Downloading
+              </ng-template>
+              <app-download-list></app-download-list>
+            </div>
+          </mat-tab>
+          <mat-tab label="File Downloads">
+            <div class="app-file-downloads"> 
+              <ng-template mat-tab-label>
+                <mat-icon class="icon-text-right">cloud_download</mat-icon>
+                File Downloads
+              </ng-template>
+            </div>
+          </mat-tab>
+          <mat-tab label="Audio Downloads">
+              <div class="app-audio-downloads"> 
+                <ng-template mat-tab-label>
+                  <mat-icon class="icon-text-right">library_music</mat-icon>
+                  Audio Downloads
+                </ng-template>
+              </div>
+            </mat-tab>
+      </mat-tab-group>
+  </div>
+</div>
+

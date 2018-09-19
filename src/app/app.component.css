@@ -1,0 +1,49 @@
+.app-main-layout {
+    height: 100%;
+    max-height: 100%;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.app-toolbar {
+    padding-bottom: 20px;
+    margin: 0px; 
+}
+
+.app-downloads-tab{
+    display: flex;
+    height: 100%;
+    flex-flow: column;
+}
+
+.app-active-downloads {
+    height: auto;
+    overflow: auto;
+}
+
+.app-download-form {
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 10px;
+    padding-right: 10px;
+    place-content: center;
+    place-items: center;
+}
+
+.app-file-downloads {
+    overflow: auto;
+}
+
+.app-audio-downloads {
+    overflow: auto;
+}
+
+.app-download-options {
+    list-style: none;
+    display: inline-flex;
+    margin: 0px;
+}
